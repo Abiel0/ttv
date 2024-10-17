@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text-to-Video Generator</title>
@@ -109,9 +107,14 @@
             <div class="spinner"></div>
             <p>Generating video...</p>
         </div>
-        <div id="video-container"></div>
-        <div id="download-container" style="text-align: center; display: none;">
-            <a id="download-link" href="https://ttvid-xb9u.onrender.com" download="generated_video.mp4" class="download-btn">
+        <div id="video-container">
+                        <video controls="">
+                            <source src="https://ttvid-xb9u.onrender.com/generated_video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+        <div id="download-container" style="text-align: center; display: block;">
+            <a id="download-link" href="https://ttvid-xb9u.onrender.com/generated_video.mp4" download="generated_video.mp4" class="download-btn">
                 Download Video
             </a>
         </div>
@@ -158,5 +161,6 @@
             }
         }
     </script>
-</body>
-</html>
+
+
+</body></html>
